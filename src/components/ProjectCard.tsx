@@ -10,13 +10,13 @@ interface ProjectCardProps {
 
 const ProjectCard: React.FC<ProjectCardProps> = ({ title, description, icon }) => {
   return (
-    <Card className="glass-card h-full transition-all duration-300 hover:bg-secondary/60 group">
+    <Card className="glass-card h-full transition-all duration-300 hover:bg-secondary/60 hover:-translate-y-1 hover:shadow-lg hover:shadow-primary/20 group">
       <CardHeader>
         <div className="flex items-center gap-2 mb-2">
-          <div className="text-primary group-hover:text-primary">
+          <div className="text-primary group-hover:text-primary group-hover:scale-110 transition-transform">
             {icon}
           </div>
-          <CardTitle className="text-lg">{title}</CardTitle>
+          <CardTitle className="text-lg group-hover:text-gradient">{title}</CardTitle>
         </div>
         <CardDescription>{description}</CardDescription>
       </CardHeader>

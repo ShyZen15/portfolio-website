@@ -1,6 +1,6 @@
 
 import React from 'react';
-import { Github, Linkedin, Code, Cpu, ArrowRight, Upload } from "lucide-react";
+import { Github, Linkedin, Code, Cpu, ArrowRight, Upload, Image } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import CodeBackground from "@/components/CodeBackground";
 import ProjectCard from "@/components/ProjectCard";
@@ -21,11 +21,12 @@ const Index = () => {
           name="Shiven Sharma"
           title="AI/ML Developer & Python Programmer"
           description="Senior at Pestle Weed School, Dehradun. Focused on integrating hardware with AI/ML using Python and socket programming."
+          imageSrc="/lovable-uploads/2a541736-12a0-485f-a34c-a89fb0bf04d2.png"
         />
 
         {/* Current projects section */}
         <section className="space-y-4">
-          <h2 className="text-2xl font-bold text-gradient">Current Projects</h2>
+          <h2 className="text-2xl font-bold text-gradient glow-text">Current Projects</h2>
           <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
             <ProjectCard 
               title="EMF Detector"
@@ -47,18 +48,24 @@ const Index = () => {
               description="File transfer application leveraging Python and socket programming for efficient data transmission."
               icon={<Upload size={24} />}
             />
+            <ProjectCard 
+              title="Caristification"
+              description="Advanced vehicle customization platform using AI to visualize modifications before implementation."
+              icon={<Image size={24} />}
+            />
           </div>
         </section>
 
         {/* Skills section */}
         <section className="space-y-4">
-          <h2 className="text-2xl font-bold text-gradient">Skills & Expertise</h2>
+          <h2 className="text-2xl font-bold text-gradient glow-text">Skills & Expertise</h2>
           <div className="grid grid-cols-2 md:grid-cols-4 gap-3">
             {[
               "Python", "Machine Learning", "Socket Programming", "Arduino", 
-              "ESP32", "Raspberry Pi", "Hardware Integration", "Computer Vision"
+              "ESP32", "Raspberry Pi", "Hardware Integration", "Computer Vision",
+              "Langchain"
             ].map((skill, index) => (
-              <div key={index} className="glass-card p-3 text-sm text-center">
+              <div key={index} className="glass-card p-3 text-sm text-center hover-effect">
                 {skill}
               </div>
             ))}
@@ -67,7 +74,7 @@ const Index = () => {
 
         {/* Contact section */}
         <section className="space-y-4">
-          <h2 className="text-2xl font-bold text-gradient">Connect</h2>
+          <h2 className="text-2xl font-bold text-gradient glow-text">Connect</h2>
           <div className="flex flex-wrap gap-4">
             <SocialLink 
               icon={<Github size={20} />} 
@@ -79,7 +86,7 @@ const Index = () => {
               label="LinkedIn"
               href="https://linkedin.com/in/yourusername" 
             />
-            <Button variant="outline" className="gap-2">
+            <Button variant="outline" className="gap-2 hover-effect">
               Contact Me <ArrowRight size={16} />
             </Button>
           </div>

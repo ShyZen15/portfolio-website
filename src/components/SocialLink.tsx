@@ -12,7 +12,7 @@ const SocialLink: React.FC<SocialLinkProps> = ({ icon, label, href }) => {
   return (
     <Button 
       variant="secondary" 
-      className="gap-2"
+      className="gap-2 hover:-translate-y-1 hover:shadow-md hover:shadow-primary/20 transition-all"
       asChild
     >
       <a href={href} target="_blank" rel="noopener noreferrer">
