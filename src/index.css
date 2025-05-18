@@ -11,7 +11,7 @@
     --card-foreground: 0 0% 98%;
     --popover: 240 10% 3.9%;
     --popover-foreground: 0 0% 98%;
-    --primary: 262.1 83.3% 57.8%;
+    --primary: 0 0% 98%;
     --primary-foreground: 210 20% 98%;
     --secondary: 220 14.3% 15.9%;
     --secondary-foreground: 210 20% 98%;
@@ -61,15 +61,14 @@
   }
   
   .text-gradient {
-    @apply bg-gradient-to-r from-primary to-purple-400 bg-clip-text text-transparent;
+    @apply bg-gradient-to-r from-white to-white/70 bg-clip-text text-transparent;
   }
 
   .glow-text {
-    text-shadow: 0 0 10px rgba(155, 135, 245, 0.5), 0 0 20px rgba(155, 135, 245, 0.3);
+    text-shadow: 0 0 10px rgba(255, 255, 255, 0.5), 0 0 20px rgba(255, 255, 255, 0.3);
   }
 
   .hover-effect {
-    @apply transition-all duration-300 hover:-translate-y-1 hover:shadow-md hover:shadow-primary/20;
+    @apply transition-all duration-300 hover:-translate-y-1 hover:shadow-md hover:shadow-white/20;
   }
 }
-

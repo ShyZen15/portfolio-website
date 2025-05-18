@@ -2,7 +2,6 @@
 import React from 'react';
 import { Github, Linkedin, Code, Cpu, ArrowRight, Upload, Image } from "lucide-react";
 import { Button } from "@/components/ui/button";
-import CodeBackground from "@/components/CodeBackground";
 import ProjectCard from "@/components/ProjectCard";
 import ProfileHeader from "@/components/ProfileHeader";
 import SocialLink from "@/components/SocialLink";
@@ -10,11 +9,6 @@ import SocialLink from "@/components/SocialLink";
 const Index = () => {
   return (
     <div className="min-h-screen bg-background text-foreground relative overflow-hidden">
-      {/* Animated code background */}
-      <div className="absolute inset-0 opacity-10 pointer-events-none">
-        <CodeBackground />
-      </div>
-      
       <div className="container max-w-4xl mx-auto px-4 py-12 relative z-10 space-y-16">
         {/* Header section */}
         <ProfileHeader 
@@ -26,7 +20,7 @@ const Index = () => {
 
         {/* Current projects section */}
         <section className="space-y-4">
-          <h2 className="text-2xl font-bold text-gradient glow-text">Current Projects</h2>
+          <h2 className="text-2xl font-bold text-white glow-text">Current Projects</h2>
           <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
             <ProjectCard 
               title="EMF Detector"
@@ -58,7 +52,7 @@ const Index = () => {
 
         {/* Skills section */}
         <section className="space-y-4">
-          <h2 className="text-2xl font-bold text-gradient glow-text">Skills & Expertise</h2>
+          <h2 className="text-2xl font-bold text-white glow-text">Skills & Expertise</h2>
           <div className="grid grid-cols-2 md:grid-cols-4 gap-3">
             {[
               "Python", "Machine Learning", "Socket Programming", "Arduino", 
@@ -74,7 +68,7 @@ const Index = () => {
 
         {/* Contact section */}
         <section className="space-y-4">
-          <h2 className="text-2xl font-bold text-gradient glow-text">Connect</h2>
+          <h2 className="text-2xl font-bold text-white glow-text">Connect</h2>
           <div className="flex flex-wrap gap-4">
             <SocialLink 
               icon={<Github size={20} />} 
