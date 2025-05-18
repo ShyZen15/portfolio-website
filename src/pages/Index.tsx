@@ -1,6 +1,6 @@
 
 import React from 'react';
-import { Github, Linkedin, Code, Cpu, ArrowRight } from "lucide-react";
+import { Github, Linkedin, Code, Cpu, ArrowRight, Upload } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import CodeBackground from "@/components/CodeBackground";
 import ProjectCard from "@/components/ProjectCard";
@@ -41,6 +41,11 @@ const Index = () => {
               title="Driver Safety Device"
               description="System combining hardware sensors and ML to monitor driver alertness and enhance road safety."
               icon={<Cpu size={24} />}
+            />
+            <ProjectCard 
+              title="Adonis Transfer"
+              description="File transfer application leveraging Python and socket programming for efficient data transmission."
+              icon={<Upload size={24} />}
             />
           </div>
         </section>
