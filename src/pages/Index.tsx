@@ -39,12 +39,12 @@ const Index = () => {
             />
             <ProjectCard 
               title="Adonis Transfer"
-              description="File transfer application leveraging Python and socket programming for efficient data transmission."
+              description="File transfer application leveraging Python, socket programming and Tkinter for GUI for efficient data transmission."
               icon={<Upload size={24} />}
             />
             <ProjectCard 
               title="Caristification"
-              description="Advanced vehicle customization platform using AI to visualize modifications before implementation."
+              description="A smart chat bot to suggest car models to user according to their lifestyles and needs using AI to visualize modifications before implementation."
               icon={<Image size={24} />}
             />
           </div>

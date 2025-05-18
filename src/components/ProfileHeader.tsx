@@ -13,7 +13,14 @@ const ProfileHeader: React.FC<ProfileHeaderProps> = ({ name, title, description,
   return (
     <header className="flex flex-col md:flex-row items-center md:items-start gap-6 text-center md:text-left">
       <Avatar className="w-32 h-32 border-2 border-primary hover:-translate-y-1 transition-transform duration-300">
-        <AvatarImage src={imageSrc || "https://images.unsplash.com/photo-1488590528505-98d2b5aba04b?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3wxMjA3fDB8MXxzZWFyY2h8Mnx8Y29kaW5nfGVufDB8fHx8MTYzMDM0MTY3OA&q=80&w=300"} alt={name} />
+        <AvatarImage 
+          src={imageSrc || "https://images.unsplash.com/photo-1488590528505-98d2b5aba04b?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3wxMjA3fDB8MXxzZWFyY2h8Mnx8Y29kaW5nfGVufDB8fHx8MTYzMDM0MTY3OA&q=80&w=300"} 
+          alt={name}
+          style={{
+            objectFit: "cover",
+            objectPosition: "center"
+          }}
+        />
         <AvatarFallback className="text-2xl font-bold">
           {name.split(' ').map(n => n[0]).join('')}
         </AvatarFallback>
