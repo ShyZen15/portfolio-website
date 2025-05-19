@@ -15,7 +15,7 @@ const Index = () => {
           name="Shiven Sharma"
           title="AI/ML Developer & Python Programmer"
           description="Senior at Pestle Weed School, Dehradun. Focused on integrating hardware with AI/ML using Python and socket programming."
-          imageSrc="/lovable-uploads/2a541736-12a0-485f-a34c-a89fb0bf04d2.png"
+          imageSrc="/lovable-uploads/6fe43ab0-f8ab-451d-8b5d-832be9eaffd1.png"
         />
 
         {/* Current projects section */}
