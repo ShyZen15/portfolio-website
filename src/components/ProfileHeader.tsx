@@ -18,7 +18,7 @@ const ProfileHeader: React.FC<ProfileHeaderProps> = ({ name, title, description,
           alt={name}
           style={{
             objectFit: "cover",
-            objectPosition: "center"
+            objectPosition: "20% 15%"  // Adjusted to center the face better
           }}
         />
         <AvatarFallback className="text-2xl font-bold">
