@@ -26,26 +26,31 @@ const Index = () => {
               title="EMF Detector"
               description="Hardware device utilizing Arduino to detect electromagnetic fields with custom ML algorithms."
               icon={<Cpu size={24} />}
+              githubUrl="https://github.com/shivensharma/emf-detector"
             />
             <ProjectCard 
               title="Video Meeting App"
               description="Accessible communication platform designed specifically for people of determination."
               icon={<Code size={24} />}
+              githubUrl="https://github.com/shivensharma/video-meeting-app"
             />
             <ProjectCard 
               title="Driver Safety Device"
               description="System combining hardware sensors and ML to monitor driver alertness and enhance road safety."
               icon={<Cpu size={24} />}
+              githubUrl="https://github.com/shivensharma/driver-safety"
             />
             <ProjectCard 
               title="Adonis Transfer"
               description="File transfer application leveraging Python, socket programming and Tkinter for GUI for efficient data transmission."
               icon={<Upload size={24} />}
+              githubUrl="https://github.com/shivensharma/adonis-transfer"
             />
             <ProjectCard 
               title="Caristification"
               description="A smart chat bot to suggest car models to user according to their lifestyles and needs using AI to visualize modifications before implementation."
               icon={<Image size={24} />}
+              githubUrl="https://github.com/shivensharma/caristification"
             />
           </div>
         </section>
@@ -73,12 +78,12 @@ const Index = () => {
             <SocialLink 
               icon={<Github size={20} />} 
               label="GitHub"
-              href="https://github.com/yourusername" 
+              href="https://github.com/shivensharma" 
             />
             <SocialLink 
               icon={<Linkedin size={20} />} 
               label="LinkedIn"
-              href="https://linkedin.com/in/yourusername" 
+              href="https://linkedin.com/in/shivensharma" 
             />
             <Button variant="outline" className="gap-2 hover-effect">
               Contact Me <ArrowRight size={16} />
